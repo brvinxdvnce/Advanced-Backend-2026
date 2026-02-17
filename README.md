@@ -1,32 +1,32 @@
 # Advanced-Backend-2026
 
 Функционал клиента (абитуриента)
-1. Возможность регистрации в системе:
-POST api/v1/auth/register
-2. Возможность аутентификации/авторизации в системе:
-POST api/v1/auth/login
-POST api/v1/auth/refresh
+### 1. Возможность регистрации в системе:
+#### POST api/v1/auth/register
+### 2. Возможность аутентификации/авторизации в системе:
+#### POST api/v1/auth/login
+#### POST api/v1/auth/refresh
 
-3. Возможность смены пароля
+### 3. Возможность смены пароля
+#### WIP
 
+### 5. Просмотр личного профиля 
+#### GET api/v1/users/{id}/profile
 
-5. Просмотр личного профиля 
-GET api/v1/users/{id}/profile
+### 6. Обновление личных данных (ФИО, email, номер телефона, дата рождения, пол, гражданство)
+#### PATCH api/v1/users/{id}
 
-6. Обновление личных данных (ФИО, email, номер телефона, дата рождения, пол, гражданство)
-PATCH api/v1/users/{id}
+### 7. Просмотр документов (отдельно каждого вида)
+#### GET api/v1/users/{id}/documents/ ? sort ?
 
-7. Просмотр документов (отдельно каждого вида)
-GET api/v1/users/{id}/documents/ ? sort ?
+### 9. Возможность скачать скан документа 
+#### GET api/v1/users/{id}/documents/{id}
 
-9. Возможность скачать скан документа 
-GET api/v1/users/{id}/documents/{id}
+### 10. Возможность редактировать данные документа
+#### PATCH api/v1/users/{id}/documents/{id}
 
-10. Возможность редактировать данные документа
-PATCH api/v1/users/{id}/documents/{id}
-
-11. Возможность удалить скан
-DELETE api/v1/users/{id}/documents/{id}
+### 11. Возможность удалить скан
+#### DELETE api/v1/users/{id}/documents/{id}
 
 12. Возможность загрузить новый скан документа
 POST api/v1/users/{id}/documents
