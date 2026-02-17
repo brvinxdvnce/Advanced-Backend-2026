@@ -5,7 +5,7 @@
 `POST api/v1/auth/register`
 
 ### 2. Возможность аутентификации/авторизации в системе:
-`POST api/v1/auth/login`
+`POST api/v1/auth/login`  
 `POST api/v1/auth/refresh`
 
 ### 3. Возможность смены пароля
