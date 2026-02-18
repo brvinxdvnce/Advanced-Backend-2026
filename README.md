@@ -4,6 +4,12 @@
 ### 1. Возможность регистрации в системе:
 * `POST api/v1/auth/register`
 
+### Тело запроса: 
+`{
+  "email": "admin@example.com",
+  "password": "Admin123!"
+}`
+
 ### 2. Возможность аутентификации/авторизации в системе:
 * `POST api/v1/auth/login`
 * `POST api/v1/auth/refresh`
