@@ -6,12 +6,18 @@
 
 ### Тело запроса: 
 `{
+  "fullname": "Ivanov Ivan Ivanovich",
   "email": "admin@example.com",
   "password": "Admin123!"
 }`
 
 ### 2. Возможность аутентификации/авторизации в системе:
 * `POST api/v1/auth/login`
+### Тело запроса: 
+`{
+  "email": "admin@example.com",
+  "password": "Admin123!"
+}`
 * `POST api/v1/auth/refresh`
 
 ### 3. Возможность смены пароля
@@ -22,6 +28,11 @@
 
 ### 5. Обновление личных данных (ФИО, email, номер телефона, дата рождения, пол, гражданство)
 * `PATCH api/v1/users/{id}`
+### Тело запроса: 
+`{
+  "email": "admin@example.com",
+  "password": "Admin123!"
+}`
 
 ### 6. Просмотр документов (отдельно каждого вида)
 * `GET api/v1/users/{id}/documents/ ? sort ?`
