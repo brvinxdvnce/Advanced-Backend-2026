@@ -25,7 +25,9 @@
 ### Тело ответа: 
 ```json
 {
-  tokens, ?id
+  "access_token": "eyJhciOiJIzI1NiInR5cCI6Ikp...",
+  "refresh_token": "wIiwieyJzdWIiOiIxMjMY3ODkb...",
+  "expires_in": 3600
 }
 ```
 
@@ -41,7 +43,9 @@
 ### Тело ответа:
 ```json
 {
-  wip
+  "access_token": "eyJhciOiJIzI1NiInR5cCI6Ikp...",
+  "refresh_token": "wIiwieyJzdWIiOiIxMjMY3ODkb...",
+  "expires_in": 3600
 }
 ```
 
@@ -49,8 +53,9 @@
 ### Тело ответа:
 ```json
 {
-  "email": "admin@example.com",
-  "password": "Admin123!"
+  "access_token": "eyJhciOiJIzI1NiInR5cCI6Ikp...",
+  "refresh_token": "wIiwieyJzdWIiOiIxMjMY3ODkb...",
+  "expires_in": 3600
 }
 ```
 ### 3. Возможность сменить данные для входа (email, пароль)
