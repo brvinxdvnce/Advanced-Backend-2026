@@ -9,7 +9,7 @@
 {
   "fullname": "Ivanov Ivan Ivanovich",
   "email": "admin@example.com",
-  "password": "Admin123!"
+  "password": "Admin123!",
   "dateOfBirth":"01.01.2001",
   "gender": "Male",
   "citizenship": "Russian",
@@ -30,6 +30,12 @@
 
 ### 3. Возможность смены пароля
 * `WIP`
+### Тело запроса:
+```json
+{
+  "wip": "wip"
+}
+```
 
 ### 4. Просмотр личного профиля 
 * `GET api/v1/users/{id}/profile`
@@ -45,19 +51,44 @@
 ```
 
 ### 6. Просмотр документов (отдельно каждого вида)
-* `GET api/v1/users/{id}/documents/ ? sort ?`
+* `GET api/v1/users/{id}/documents/`
+
+ ### Query – параметры:
+`type (enum, допустимые значения: "passport", "diploma")`
+– фильтрация по типу документа
+  
+### Тело ответа:
+```json
+{
+  "email": "admin@example.com",
+  "password": "Admin123!"
+}
+```
 
 ### 7. Возможность скачать скан документа 
 * `GET api/v1/users/{id}/documents/{id}`
 
 ### 8. Возможность редактировать данные документа
 * `PATCH api/v1/users/{id}/documents/{id}`
+### Тело запроса:
+```json
+{
+  
+}
+```
 
 ### 9. Возможность удалить скан
 * `DELETE api/v1/users/{id}/documents/{id}`
 
 ### 10. Возможность загрузить новый скан документа
 * `POST api/v1/users/{id}/documents`
+### Тело запроса:
+```json
+{
+  "email": "admin@example.com",
+  "password": "Admin123!"
+}
+```
 
 ### 11. Возможность посмотреть список программ с возможностью пагинации и следующими фильтрациями:
 * `GET api/v1/WIP`
