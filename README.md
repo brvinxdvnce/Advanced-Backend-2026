@@ -9,6 +9,10 @@
   "fullname": "Ivanov Ivan Ivanovich",
   "email": "admin@example.com",
   "password": "Admin123!"
+  "dateOfBirth":"01.01.2001",
+  "gender": "Male",
+  "citizenship": "Russian",
+  "phoneNumber": "+7 999 876 43 21"
 }`
 
 ### 2. Возможность аутентификации/авторизации в системе:
