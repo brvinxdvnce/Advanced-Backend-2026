@@ -58,17 +58,18 @@
   "expires_in": 3600
 }
 ```
+
 ### 3. Возможность сменить данные для входа (email, пароль)
-* `PATCH api/v1/auth/credintials/change-password`
+* `PATCH api/v1/auth/credintials/password`
 ### Тело запроса:
 ```json
 {
-  "password": "Admin123!",
-  "newPassword": "Admin12345!",
+  "old_password": "Admin123!",
+  "new_password": "Admin12345!",
 }
 ```
 
-* `PATCH api/v1/auth/credintials/change-email`
+* `PATCH api/v1/auth/credintials/email`
 ### Тело запроса:
 ```json
 {
@@ -208,7 +209,7 @@
 * "уже описано"
 
 ### 2. Возможность изменить данные для входа (email, пароль)
-* ~~`POST api/v1/WIP`~~
+* ~~`POST api/v1/`~~
 * "уже описано"
 
 ### 3. Взять поступление абитуриента.
@@ -346,7 +347,7 @@
 * `POST api/v1/managers`
 
 ### 4. Возможность отредактировать данные менеджера 
-* `RATCH api/v1/managers/{id}`
+* `PATCH api/v1/managers/{id}`
 
 ### 5. Возможность удалить менеджера, главного менеджера
 * `DELETE api/v1/managers/{id}`
