@@ -80,6 +80,7 @@
 
 ### 4. Просмотр личного профиля 
 * `GET api/v1/users/{id}/profile`
+* `GET api/v1/users/me/profile` – id автоматически возьмётся из токена
 ### Тело ответа:
 ```json
 {
