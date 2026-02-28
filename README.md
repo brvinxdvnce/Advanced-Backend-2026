@@ -154,7 +154,7 @@
 
 ### 10. Возможность загрузить новый скан документа
 * `POST api/v1/users/{id}/documents/{id}/file`
-* `POST api/v1/users/me/documents/me/file` – id автоматически возьмётся из токена
+* `POST api/v1/users/me/documents/{id}/file` – id автоматически возьмётся из токена
 ### Тело запроса:
 ```json
 {
