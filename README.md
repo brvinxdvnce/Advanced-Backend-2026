@@ -384,8 +384,7 @@
 ### Тело запроса:
 ```json
 {
-  "email": "admin@example.com",
-  "password": "Admin123!"
+  "wip": "wip"
 }
 ```
 
