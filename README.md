@@ -27,7 +27,7 @@
 {
   "access_token": "eyJhciOiJIzI1NiInR5cCI6Ikp...",
   "refresh_token": "wIiwieyJzdWIiOiIxMjMY3ODkb...",
-  "expires_in": 3600
+  "expires_in": 900
 }
 ```
 
@@ -45,7 +45,7 @@
 {
   "access_token": "eyJhciOiJIzI1NiInR5cCI6Ikp...",
   "refresh_token": "wIiwieyJzdWIiOiIxMjMY3ODkb...",
-  "expires_in": 3600
+  "expires_in": 900
 }
 ```
 
@@ -55,7 +55,7 @@
 {
   "access_token": "eyJhciOiJIzI1NiInR5cCI6Ikp...",
   "refresh_token": "wIiwieyJzdWIiOiIxMjMY3ODkb...",
-  "expires_in": 3600
+  "expires_in": 900
 }
 ```
 
