@@ -142,8 +142,8 @@
 ```
 
 ### 7. Возможность скачать скан документа 
-* `GET api/v1/users/{id}/documents/{id}/file`
-* `GET api/v1/users/me/documents/{id}/file` – id автоматически возьмётся из токена
+* `GET api/v1/users/{id}/documents/{docId}/file`
+* `GET api/v1/users/me/documents/{docId}/file` – id автоматически возьмётся из токена
 
 ### Тело ответа:
 ```json
@@ -154,8 +154,8 @@
 ```
 
 ### 8. Возможность редактировать данные документа
-* `PATCH api/v1/users/{id}/documents/{id}`
-* `PATCH api/v1/users/me/documents/{id}` – id автоматически возьмётся из токена
+* `PATCH api/v1/users/{id}/documents/{docId}`
+* `PATCH api/v1/users/me/documents/{docId}` – id автоматически возьмётся из токена
 ### Тело запроса:
 ```json
 {
@@ -176,12 +176,12 @@
 ```
 
 ### 9. Возможность удалить скан
-* `DELETE api/v1/users/{id}/documents/{id}/file`
-* `DELETE api/v1/users/me/documents/{id}/file` – id автоматически возьмётся из токена
+* `DELETE api/v1/users/{id}/documents/{docId}/file`
+* `DELETE api/v1/users/me/documents/{docId}/file` – id автоматически возьмётся из токена
 
 ### 10. Возможность загрузить новый скан документа
-* `POST api/v1/users/{id}/documents/{id}/file`
-* `POST api/v1/users/me/documents/{id}/file` – id автоматически возьмётся из токена
+* `POST api/v1/users/{id}/documents/{docId}/file`
+* `POST api/v1/users/me/documents/{docId}/file` – id автоматически возьмётся из токена
 
 ### Тело запроса:
 ```json
@@ -258,8 +258,8 @@
 Если у абитуриента добавлен документ об образовании, уровень выбранной программы должен быть либо аналогичен уровню документа об образовании, либо входить в список доступных для обучения
 
 ### 13. Возможность изменить приоритет программы
-* `PATCH api/v1/users/{id}/programs/{id}`
-* `PATCH api/v1/users/me/programs/{id}` – id автоматически возьмётся из токена
+* `PATCH api/v1/users/{id}/programs/{progId}`
+* `PATCH api/v1/users/me/programs/{progId}` – id автоматически возьмётся из токена
 ### Тело запроса:
 ```json
 {
@@ -268,8 +268,8 @@
 ```
 
 ### 14. Возможность удалить программу из выбранного списка
-* `DELETE api/v1/users/{id}/programs/{id}`
-* `DELETE api/v1/users/me/programs/{id}` – id автоматически возьмётся из токена
+* `DELETE api/v1/users/{id}/programs/{progId}`
+* `DELETE api/v1/users/me/programs/{progId}` – id автоматически возьмётся из токена
 
 ### 15. Получить уведомление на email об изменении статуса поступления
 
