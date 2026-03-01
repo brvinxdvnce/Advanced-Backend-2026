@@ -148,7 +148,8 @@
 ### Тело ответа:
 ```json
 {
-  
+  "url": "string",
+  "expiresIn": 900
 }
 ```
 
@@ -181,6 +182,7 @@
 ### 10. Возможность загрузить новый скан документа
 * `POST api/v1/users/{id}/documents/{id}/file`
 * `POST api/v1/users/me/documents/{id}/file` – id автоматически возьмётся из токена
+
 ### Тело запроса:
 ```json
 {
