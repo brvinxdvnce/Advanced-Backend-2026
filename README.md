@@ -125,14 +125,16 @@
 [
   {
     "type": "Passport",
-    "series": ",
-    "number": ",
-    "placeOfBirth": ",
-    "issuedWhen": ",
-    "issuedBy": "
+    "id":"",
+    "series": "",
+    "number": "",
+    "placeOfBirth": "",
+    "issuedWhen": "",
+    "issuedBy": ""
   },
   {
     "type": "Diploma",
+    "id":"",
     "name": "",
     "diplomaType": ""
   }
@@ -156,7 +158,19 @@
 ### Тело запроса:
 ```json
 {
-  
+   {
+    "type": "Passport",
+    "series": "",
+    "number": "",
+    "placeOfBirth": "",
+    "issuedWhen": "",
+    "issuedBy": ""
+  },
+  {
+    "type": "Diploma",
+    "name": "",
+    "diplomaType": ""
+  } 
 }
 ```
 
@@ -199,6 +213,36 @@
  
 `program (string, опционально)`
  – поиск по названию/коду программы (по части).
+
+### Тело ответа:
+```json
+{
+  "programs": [
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "createTime": "2026-03-01T19:36:08.230Z",
+      "name": "string",
+      "code": "string",
+      "language": "string",
+      "educationForm": "string",
+      "faculty": {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "createTime": "2026-03-01T19:36:08.230Z",
+        "name": "string"
+      },
+      "educationLevel": {
+        "id": 0,
+        "name": "string"
+      }
+    }
+  ],
+  "pagination": {
+    "size": 0,
+    "count": 0,
+    "current": 0
+  }
+}
+```
 
 ### 12. Возможность добавить программу в список выбранных программ для обучения
 * `POST api/v1/users/{id}/programs`
@@ -272,6 +316,21 @@
 
 `name (string, опционально)`
 – Сортировка по дате внесения последних изменений (по убыванию, по возрастанию)
+
+### Тело ответа:
+```json
+{
+  "admissions":
+    [
+      "wip": "wip"
+    ],
+  "pagination": {
+    "size": 0,
+    "count": 0,
+    "current": 0
+  }
+}
+```
 
 ### 6. Посмотреть данные абитуриента:
 * `GET api/v1/users/{id}/profile`
