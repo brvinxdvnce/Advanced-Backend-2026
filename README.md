@@ -84,6 +84,7 @@
 ### Тело ответа:
 ```json
 {
+  "id": "30dd879c-ee2f-11...",
   "fullname": "Ivanov Ivan Ivanovich",
   "email": "ivan.ivanov@example.com",
   "dateOfBirth": "2001-01-01",
@@ -112,19 +113,30 @@
 ```
 
 ### 6. Просмотр документов (отдельно каждого вида)
-* `GET api/v1/users/{id}/documents/`
-* `GET api/v1/users/{me}/documents/` – id автоматически возьмётся из токена
+* `GET api/v1/users/{id}/documents`
+* `GET api/v1/users/me/documents` – id автоматически возьмётся из токена
 
  ### Query – параметры:
-`type (enum, допустимые значения: "passport", "diploma")`
+`type (enum, допустимые значения: "Passport", "Diploma")`
 – фильтрация по типу документа
   
 ### Тело ответа:
 ```json
-{
-  "email": "admin@example.com",
-  "password": "Admin123!"
-}
+[
+  {
+    "type": "Passport",
+    "series": ",
+    "number": ",
+    "placeOfBirth": ",
+    "issuedWhen": ",
+    "issuedBy": "
+  },
+  {
+    "type": "Diploma",
+    "name": "",
+    "diplomaType": ""
+  }
+]
 ```
 
 ### 7. Возможность скачать скан документа 
