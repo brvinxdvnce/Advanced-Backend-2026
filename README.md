@@ -375,10 +375,10 @@
 ```
 
 ### 9. Возможность удалить скан документа абитуриента
-* `DELETE api/v1/users/{id}/documents/{id}`
+* `DELETE api/v1/users/{id}/documents/{id}/file`
 
 ### 10. Возможность загрузить новый скан документа абитуриента
-* `POST api/v1/users/{id}/documents`
+* `POST api/v1/users/{id}/documents/{id}/file`
 ### Тело запроса:
 ```json
 {
