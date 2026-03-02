@@ -293,17 +293,10 @@
 * "уже описано"
 
 ### 3. Взять поступление абитуриента.
-* `PATCH api/v1/admissions/{id}`
+* `POST api/v1/admissions/{id}/manager`
 
 ### 4. Отказаться от поступления абитуриента (вернуть его в общий пул заявок).
-* `PATCH api/v1/admissions/{id}`
-
-### Тело ответа:
-```json
-{
-  "manager": "null"
-}
-```
+* `DELETE api/v1/admissions/{id}/manager`
 
 ### 5. Просмотреть заявки абитуриентов с пагинацией  и следующими фильтрациями и сортировками:
 * `GET api/v1/admissions`
