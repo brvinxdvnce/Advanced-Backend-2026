@@ -433,7 +433,7 @@
 – должность менеджера
 
 ### 2. Возможность назначить менеджера на поступление, если оно свободно
-* `PATCH api/v1/admissions{id}/manager`
+* `PATCH api/v1/admissions/{id}/manager`
 
 ### Тело запроса:
 ```json
