@@ -189,7 +189,7 @@
 * `POST api/v1/users/me/documents/{docId}/file` – id автоматически возьмётся из токена
 
 ### Тело запроса:
-```json
+```
   (Content-Type: multipart/form-data)
   your_file.pdf
 ```
