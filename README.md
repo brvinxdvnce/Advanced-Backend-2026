@@ -17,7 +17,7 @@
   "fullname": "Ivanov Ivan Ivanovich",
   "email": "admin@example.com",
   "password": "Admin123!",
-  "dateOfBirth":"01.01.2001",
+  "dateOfBirth":"2001-01-01",
   "gender": "Male",
   "citizenship": "Russian",
   "phoneNumber": "+7 999 876 43 21"
