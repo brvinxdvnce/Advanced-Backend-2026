@@ -133,13 +133,15 @@
     "number": "",
     "placeOfBirth": "",
     "issuedWhen": "",
-    "issuedBy": ""
+    "issuedBy": "",
+    "url": ""
   },
   {
     "type": "Diploma",
     "id":"",
     "name": "",
-    "diplomaType": ""
+    "diplomaType": "",
+    "url": ""
   }
 ]
 ```
