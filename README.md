@@ -190,7 +190,7 @@
 
 ### Тело запроса:
 ```json
-  (Content-Type:	multipart/form-data)
+  (Content-Type: multipart/form-data)
   your_file.pdf
 ```
 
