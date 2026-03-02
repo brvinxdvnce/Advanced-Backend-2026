@@ -369,8 +369,6 @@
 ### Тело запроса: 
 ```json
 {
-  "password": "Admin123!",
-  "email": "admin@example.com",
   "fullname": "Ivanov Ivan Ivanovich",
   "email": "ivan.ivanov@example.com",
   "dateOfBirth": "2001-01-01",
