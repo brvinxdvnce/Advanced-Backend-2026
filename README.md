@@ -64,7 +64,7 @@
 * `POST api/v1/auth/logout`
 
 ### 3. Возможность сменить данные для входа (email, пароль)
-* `PATCH api/v1/auth/credintials/password`
+* `PATCH api/v1/auth/credentials/password`
 ### Тело запроса:
 ```json
 {
@@ -73,7 +73,7 @@
 }
 ```
 
-* `PATCH api/v1/auth/credintials/email`
+* `PATCH api/v1/auth/credentials/email`
 ### Тело запроса:
 ```json
 {
