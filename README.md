@@ -273,7 +273,7 @@
 ### Тело запроса:
 ```json
 {
-  "prioriry": "int"
+  "priority": "int"
 }
 ```
 
@@ -411,7 +411,7 @@
 ### Тело запроса:
 ```json
 {
-  "prioriry": ""
+  "priority": ""
 }
 ```
 
