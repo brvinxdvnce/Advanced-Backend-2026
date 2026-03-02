@@ -61,6 +61,8 @@
 }
 ```
 
+* `POST api/v1/auth/logout`
+
 ### 3. Возможность сменить данные для входа (email, пароль)
 * `PATCH api/v1/auth/credintials/password`
 ### Тело запроса:
