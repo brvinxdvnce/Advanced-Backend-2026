@@ -190,10 +190,8 @@
 
 ### Тело запроса:
 ```json
-{
-  "email": "admin@example.com",
-  "password": "Admin123!"
-}
+  (Content-Type:	multipart/form-data)
+  your_file.pdf
 ```
 
 ### 11. Возможность посмотреть список программ с возможностью пагинации и следующими фильтрациями:
