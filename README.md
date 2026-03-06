@@ -319,11 +319,30 @@ your_file.pdf
 * `GET api/v1/users/{id}/programs`
 * `GET api/v1/users/me/programs` – id автоматически возьмётся из токена
 
-### Тело запроса:
+### Тело ответа:
 ```json
-{
-  "WIP": "WIP"
-}
+[
+  {
+    "priority": "int",
+    "program": {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "createTime": "2026-03-06T20:34:51.096Z",
+        "name": "string",
+        "code": "string",
+        "language": "string",
+        "educationForm": "string",
+        "faculty": {
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "createTime": "2026-03-06T20:34:51.096Z",
+          "name": "string"
+        },
+        "educationLevel": {
+          "id": 0,
+          "name": "string"
+      }
+    }
+  }
+]
 ```
 
 ### 16. Получить уведомление на email об изменении статуса поступления
@@ -379,7 +398,33 @@ your_file.pdf
 {
   "admissions":
     [
-      "wip": "wip"
+      {
+        "userId":"guid",
+        "admissionId":"guid",
+        "status": "enum",
+        "programs" : [
+                {
+            "priority": "int",
+            "program": {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "createTime": "2026-03-06T20:34:51.096Z",
+                "name": "string",
+                "code": "string",
+                "language": "string",
+                "educationForm": "string",
+                "faculty": {
+                  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                  "createTime": "2026-03-06T20:34:51.096Z",
+                  "name": "string"
+                },
+                "educationLevel": {
+                  "id": 0,
+                  "name": "string"
+                }
+              }
+          }
+        ]
+      }
     ],
   "pagination": {
     "size": 0,
