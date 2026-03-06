@@ -205,8 +205,8 @@
 
 ### Тело запроса:
 ```
-  (Content-Type: multipart/form-data)
-  your_file.pdf
+(Content-Type: multipart/form-data)
+your_file.pdf
 ```
 
 ### 11. Возможность посмотреть список программ с возможностью пагинации и следующими фильтрациями:
