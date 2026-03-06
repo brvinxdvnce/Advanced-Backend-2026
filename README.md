@@ -219,7 +219,7 @@ your_file.pdf
 `size (int, default: 10, max: 100)`
 – размер страницы
 
-`faculty (string, опционально)`
+`faculty (List<string>, опционально)`
 – фильтрация по факультету
 
 `level (int, опционально)`
