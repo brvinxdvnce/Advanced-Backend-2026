@@ -202,7 +202,7 @@
 }
 ```
 
-### 9. Возможность удалить скан
+### 9. Возможность удалить скан документа
 [Доступ: <kbd>Все</kbd> ]
 * `DELETE api/v1/users/{id}/documents/{docId}/file`
 * `DELETE api/v1/users/me/documents/{docId}/file` – id автоматически возьмётся из токена
@@ -377,7 +377,7 @@ your_file.pdf
 
 ### 6. Посмотреть данные абитуриента:
 [Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ] WIP
-* `GET api/v1/users/{id}/profile`
+* ~~`GET api/v1/users/{id}/profile`~~
 
 ### Тело ответа:
 ```json
@@ -395,56 +395,23 @@ your_file.pdf
   Документы (отдельно каждого вида) с возможность посмотреть/скачать сканы документа
   Выбранные программы
   
-### 7. Обновление личных данных абитуриента
-[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ]
-* `PATCH api/v1/users/{id}`
-
-### Тело запроса: 
-```json
-{
-  "fullname": "Ivanov Ivan Ivanovich",
-  "email": "ivan.ivanov@example.com",
-  "dateOfBirth": "2001-01-01",
-  "gender": "Male",
-  "citizenship": "Russian",
-  "phoneNumber": "+7 999 876 43 21"
-}
-```
+### 7. ~~Обновление личных данных абитуриента~~
+* ~~`PATCH api/v1/users/{id}`~~
 
 ### 8.~~Возможность редактировать данные документа абитуриента~~
-* `PATCH api/v1/users/{id}/documents/{id}`
-### Тело запроса:
-```
-уже описано
-```
+* ~~`PATCH api/v1/users/{id}/documents/{id}`~~
 
-### 9. Возможность удалить скан документа абитуриента
-[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ] WIP
-* `DELETE api/v1/users/{id}/documents/{id}/file`
+### 9.~~Возможность удалить скан документа абитуриента~~
+* ~~`DELETE api/v1/users/{id}/documents/{id}/file`~~
 
-### 10. Возможность загрузить новый скан документа абитуриента
-[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ] WIP
-* `POST api/v1/users/{id}/documents/{id}/file`
-### Тело запроса:
-```json
-{
-  "wip": "wip"
-}
-```
+### 10. ~~Возможность загрузить новый скан документа абитуриента~~
+* ~~`POST api/v1/users/{id}/documents/{id}/file`~~
 
-### 11. Возможность изменить приоритет программы
-[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ] WIP
-* `PATCH api/v1/users/{id}/programs/{id}`
-### Тело запроса:
-```json
-{
-  "priority": ""
-}
-```
+### 11. ~~Возможность изменить приоритет программы~~
+* ~~`PATCH api/v1/users/{id}/programs/{id}`~~
 
-### 12. Возможность удалить программу из выбранного списка
-[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ] WIP
-* `DELETE api/v1/users/{id}/programs/{id}`
+### 12. ~~Возможность удалить программу из выбранного списка~~
+* ~~`DELETE api/v1/users/{id}/programs/{id}`~~
 
 ### 13. Изменить статус поступления
 [ <kbd>email-notify</kbd> ]
