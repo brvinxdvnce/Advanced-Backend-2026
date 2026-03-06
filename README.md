@@ -8,8 +8,7 @@
 
 
 ## Спецификация схемы аутентификации:
-### Схема:
-### Access-Refresh tokens
+### Схема: Access-Refresh tokens
 
 ### Access token info:
 * Type: JWT
