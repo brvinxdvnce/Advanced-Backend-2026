@@ -22,8 +22,9 @@
 ## Спецификация Web API:
 
 ## Функционал клиента (абитуриента)
-[Доступ: <kbd>Все</kbd> ]
+
 ### 1. Возможность регистрации в системе:
+[Доступ: <kbd>Все</kbd> ]
 * `POST api/v1/auth/register`
 
 ### Тело запроса: 
@@ -47,8 +48,8 @@
 }
 ```
 
-[Доступ: <kbd>Все</kbd>]
 ### 2. Возможность аутентификации/авторизации в системе:
+[Доступ: <kbd>Все</kbd> ]
 * `POST api/v1/auth/login`
 ### Тело запроса:
 ```json
@@ -65,7 +66,7 @@
   "expires_in": 900
 }
 ```
-
+[Доступ: <kbd>Все</kbd> ]
 * `POST api/v1/auth/refresh`
 ### Тело ответа:
 ```json
@@ -75,10 +76,11 @@
   "expires_in": 900
 }
 ```
-
+[Доступ: <kbd>Все</kbd> ]
 * `POST api/v1/auth/logout`
 
 ### 3. Возможность сменить данные для входа (email, пароль)
+[Доступ: <kbd>Все</kbd> ]
 * `PATCH api/v1/auth/credentials/password`
 ### Тело запроса:
 ```json
@@ -87,7 +89,7 @@
   "new_password": "Admin12345!",
 }
 ```
-
+[Доступ: <kbd>Все</kbd> ]
 * `PATCH api/v1/auth/credentials/email`
 ### Тело запроса:
 ```json
@@ -98,6 +100,7 @@
 ```
 
 ### 4. Просмотр личного профиля 
+[Доступ: <kbd>Все</kbd> ]
 * `GET api/v1/users/{id}/profile`
 * `GET api/v1/users/me/profile` – id автоматически возьмётся из токена
 ### Тело ответа:
@@ -114,6 +117,7 @@
 ```
 
 ### 5. Обновление личных данных (ФИО, email, номер телефона, дата рождения, пол, гражданство)
+[Доступ: <kbd>Все</kbd> ]
 * `PATCH api/v1/users/{id}`
 * `PATCH api/v1/users/me` – id автоматически возьмётся из токена
 
@@ -131,6 +135,7 @@
 ```
 
 ### 6. Просмотр документов (отдельно каждого вида)
+[Доступ: <kbd>Все</kbd> ]
 * `GET api/v1/users/{id}/documents`
 * `GET api/v1/users/me/documents` – id автоматически возьмётся из токена
 
@@ -162,6 +167,7 @@
 ```
 
 ### 7. Возможность скачать скан документа 
+[Доступ: <kbd>Все</kbd> ]
 * `GET api/v1/users/{id}/documents/{docId}/file`
 * `GET api/v1/users/me/documents/{docId}/file` – id автоматически возьмётся из токена
 
@@ -174,6 +180,7 @@
 ```
 
 ### 8. Возможность редактировать данные документа
+[Доступ: <kbd>Все</kbd> ]
 * `PATCH api/v1/users/{id}/documents/{docId}`
 * `PATCH api/v1/users/me/documents/{docId}` – id автоматически возьмётся из токена
 ### Тело запроса:
@@ -196,10 +203,12 @@
 ```
 
 ### 9. Возможность удалить скан
+[Доступ: <kbd>Все</kbd> ]
 * `DELETE api/v1/users/{id}/documents/{docId}/file`
 * `DELETE api/v1/users/me/documents/{docId}/file` – id автоматически возьмётся из токена
 
 ### 10. Возможность загрузить новый скан документа
+[Доступ: <kbd>Все</kbd> ]
 * `POST api/v1/users/{id}/documents/{docId}/file`
 * `POST api/v1/users/me/documents/{docId}/file` – id автоматически возьмётся из токена
 
@@ -210,6 +219,7 @@ your_file.pdf
 ```
 
 ### 11. Возможность посмотреть список программ с возможностью пагинации и следующими фильтрациями:
+[Доступ: <kbd>Все</kbd> ]
 * `GET api/v1/programs`
 
  ### Query – параметры:
@@ -265,6 +275,7 @@ your_file.pdf
 ```
 
 ### 12. Возможность добавить программу в список выбранных программ для обучения
+[Доступ: <kbd>Все</kbd> ]
 * `POST api/v1/users/{id}/programs`
 * `POST api/v1/users/me/programs` – id автоматически возьмётся из токена
 
@@ -283,6 +294,7 @@ your_file.pdf
 Если у абитуриента добавлен документ об образовании, уровень выбранной программы должен быть либо аналогичен уровню документа об образовании, либо входить в список доступных для обучения
 
 ### 13. Возможность изменить приоритет программы
+[Доступ: <kbd>Все</kbd> ]
 * `PATCH api/v1/users/{id}/programs/{programId}`
 * `PATCH api/v1/users/me/programs/{programId}` – id автоматически возьмётся из токена
 ### Тело запроса:
@@ -293,6 +305,7 @@ your_file.pdf
 ```
 
 ### 14. Возможность удалить программу из выбранного списка
+[Доступ: <kbd>Все</kbd> ]
 * `DELETE api/v1/users/{id}/programs/{programId}`
 * `DELETE api/v1/users/me/programs/{programId}` – id автоматически возьмётся из токена
 
@@ -308,12 +321,15 @@ your_file.pdf
 * "уже описано"
 
 ### 3. Взять поступление абитуриента.
+[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ] WIP
 * `POST api/v1/admissions/{id}/manager`
 
 ### 4. Отказаться от поступления абитуриента (вернуть его в общий пул заявок).
+[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ] WIP
 * `DELETE api/v1/admissions/{id}/manager`
 
 ### 5. Просмотреть заявки абитуриентов с пагинацией  и следующими фильтрациями и сортировками:
+[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ]
 * `GET api/v1/admissions`
 
 ### Query – параметры:
@@ -360,6 +376,7 @@ your_file.pdf
 ```
 
 ### 6. Посмотреть данные абитуриента:
+[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ] WIP
 * `GET api/v1/users/{id}/profile`
 
 ### Тело ответа:
@@ -379,6 +396,7 @@ your_file.pdf
   Выбранные программы
   
 ### 7. Обновление личных данных абитуриента
+[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ]
 * `PATCH api/v1/users/{id}`
 
 ### Тело запроса: 
@@ -401,9 +419,11 @@ your_file.pdf
 ```
 
 ### 9. Возможность удалить скан документа абитуриента
+[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ] WIP
 * `DELETE api/v1/users/{id}/documents/{id}/file`
 
 ### 10. Возможность загрузить новый скан документа абитуриента
+[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ] WIP
 * `POST api/v1/users/{id}/documents/{id}/file`
 ### Тело запроса:
 ```json
@@ -413,6 +433,7 @@ your_file.pdf
 ```
 
 ### 11. Возможность изменить приоритет программы
+[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ] WIP
 * `PATCH api/v1/users/{id}/programs/{id}`
 ### Тело запроса:
 ```json
@@ -422,10 +443,12 @@ your_file.pdf
 ```
 
 ### 12. Возможность удалить программу из выбранного списка
+[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ] WIP
 * `DELETE api/v1/users/{id}/programs/{id}`
 
 ### 13. Изменить статус поступления
 [ <kbd>email-notify</kbd> ]
+[Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ]
 * `PATCH api/v1/admission/{id}`
 
 ### Тело запроса:
