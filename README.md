@@ -256,7 +256,7 @@
 ### Тело запроса:
 ```json
 {
-  "progId": "3fa85f64-5717-45..."
+  "programId": "3fa85f64-5717-45..."
 }
 ```
 
@@ -268,8 +268,8 @@
 Если у абитуриента добавлен документ об образовании, уровень выбранной программы должен быть либо аналогичен уровню документа об образовании, либо входить в список доступных для обучения
 
 ### 13. Возможность изменить приоритет программы
-* `PATCH api/v1/users/{id}/programs/{progId}`
-* `PATCH api/v1/users/me/programs/{progId}` – id автоматически возьмётся из токена
+* `PATCH api/v1/users/{id}/programs/{programId}`
+* `PATCH api/v1/users/me/programs/{programId}` – id автоматически возьмётся из токена
 ### Тело запроса:
 ```json
 {
@@ -278,8 +278,8 @@
 ```
 
 ### 14. Возможность удалить программу из выбранного списка
-* `DELETE api/v1/users/{id}/programs/{progId}`
-* `DELETE api/v1/users/me/programs/{progId}` – id автоматически возьмётся из токена
+* `DELETE api/v1/users/{id}/programs/{programId}`
+* `DELETE api/v1/users/me/programs/{programId}` – id автоматически возьмётся из токена
 
 ### 15. Получить уведомление на email об изменении статуса поступления
 
@@ -461,6 +461,19 @@
 ### 4. Возможность отредактировать данные менеджера 
 [Доступ: <kbd>Admin</kbd> ]
 * `PATCH api/v1/managers/{id}`
+
+### Тело запроса: 
+```json
+{
+  "email": "admin@example.com",
+  "fullname": "Ivanov Ivan Ivanovich",
+  "email": "ivan.ivanov@example.com",
+  "dateOfBirth": "2001-01-01",
+  "gender": "Male",
+  "citizenship": "Russian",
+  "phoneNumber": "+7 999 876 43 21"
+}
+```
 
 ### 5. Возможность удалить менеджера, главного менеджера
 [Доступ: <kbd>Admin</kbd> ]
