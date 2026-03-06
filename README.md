@@ -415,6 +415,7 @@ your_file.pdf
 
 ### 13. Изменить статус поступления
 [ <kbd>email-notify</kbd> ]
+
 [Доступ: <kbd>Admin</kbd> <kbd>Gen.Manager</kbd> <kbd>Manager</kbd> ]
 * `PATCH api/v1/admission/{id}`
 
