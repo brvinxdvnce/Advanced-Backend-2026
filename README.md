@@ -444,7 +444,7 @@ your_file.pdf
 * `GET api/v1/managers`
 
 ### Query – параметры:
-`position (enum, Допустимые значения: "Manager", "MainManager")`
+`position (enum, Допустимые значения: "Manager", "GeneralManager")`
 – должность менеджера
 
 ### 2. Возможность назначить менеджера на поступление, если оно свободно
