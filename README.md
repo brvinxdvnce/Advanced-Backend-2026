@@ -426,7 +426,7 @@ your_file.pdf
 
 ### 13. Изменить статус поступления
 * `PATCH api/v1/admission/{id}`
-* 
+
 ### Тело запроса:
 ```json
 {
